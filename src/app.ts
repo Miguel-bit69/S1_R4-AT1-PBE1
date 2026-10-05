@@ -91,6 +91,26 @@ app.get("/chamados/:id", (req: Request, res: Response) => {
   }
 });
 
+const createChamadoSchema = z.object({
+    nomeCliente: z
+        .string()
+        .min(3, "O nome deve ter pelo menos 3 caracteres")
+        .max(100, "O nome deve ter no máximo 100 caracteres"),
+
+    equipamento: z
+        .string()
+        .min(2, "O equipamento deve ter pelo menos 2 caracteres")
+        .max(100, "O equipamento deve ter no máximo 100 caracteres"),
+
+    descricaoProblema: z
+        .string()
+        .min(10, "A descrição deve ter pelo menos 10 caracteres")
+        .max(500, "A descrição deve ter no máximo 500 caracteres"),
+
+    prioridade: z.enum(["Baixa", "Média", "Alta"]),
+
+    status: z.enum(["Aberto", "Em atendimento", "Concluído"])
+});
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
