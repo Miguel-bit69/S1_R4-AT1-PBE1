@@ -1,0 +1,26 @@
+[
+    {
+        "id": "7a11c54f-f8c7-4102-8ed3-5dfae40d1beb",
+        "nomeCliente": "Miguel",
+        "equipamento": "Notebook",
+        "descricaoProblema": "O notebook está infectado com virus",
+        "prioridade": "Media",
+        "status": "Aberto"
+    },
+    {
+        "id": "80e05a4e-ed04-45a8-8e6e-d071bb4f66e9",
+        "nomeCliente": "Freitas",
+        "equipamento": "Supino inclinado",
+        "descricaoProblema": "Supino muito leve",
+        "prioridade": "Alta",
+        "status": "Em andamento"
+    },
+    {
+        "id": "d40409c8-e44d-49f3-a235-cfa1b62db8eb",
+        "nomeCliente": "Bruno",
+        "equipamento": "Celular",
+        "descricaoProblema": "Furo a bateria",
+        "prioridade": "Alta",
+        "status": "Em andamento"
+    }
+]
